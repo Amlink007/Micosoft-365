@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 40px;
+    color: #222;
+}
+
+h1 {
+    color: #2d8cf0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+input[type="password"] {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    font-size: 16px;
+}
+/* From Uiverse.io by Creatlydev */ 
+button {
+  line-height: 1;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.75em 1em;
+  padding-right: 1.25em;
+  color: #fff;
+  border: 1px solid transparent;
+  font-weight: 700;
+  border-radius: 2em;
+  font-size: 1rem;
+  box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+  transition: transform 0.3s;
+
+  background: linear-gradient(
+    90deg,
+    rgba(77, 54, 208, 1) 0%,
+    rgba(132, 116, 254, 1) 100%
+  );
+}
+
+button__icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+button:hover {
+  border-color: #f4f5f2;
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+}
+
+.group {
+  display: flex;
+  line-height: 3px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.input {
+  width: 200px;
+  height: 25px;
+  line-height: 30px;
+  padding: 0 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(129, 140, 248, 0.3);
+  background-color: #f8fafc;
+  color: #0d0c22;
+  transition: .5s ease;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus, input:hover {
+  outline: none;
+  border-color: rgba(129, 140, 248);
+  background-color: #fff;
+  box-shadow: 0 0 0 5px rgb(129 140 248 / 30%);
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: none;
+  width: 1rem;
+  height: 1rem;
+}

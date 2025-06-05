@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft 365</title>
+    <link rel="stylesheet" href="page.css"> <!-- Lien vers le fichier CSS -->
+</head>
+
+<body>
+    <h1>Bienvenue sur Microsoft 365</h1>
+    <p>Entrez la clé du produit pour pouvoir vous connectez à Microsoft 365</p>
+    <div class="group">
+        <input class="input" type="password" placeholder="Entrez la clé du produit" required>
+    </div>
+    <button type="button">Entrez</button>
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            const valeur = document.querySelector('input').value; // Récupère la valeur du champ
+            const key = "1234";
+            if (valeur === key) {
+                window.location.href = "connect.html"; // Redirige vers une autre page
+            } else {
+                alert('⚠️Clé incorrecte. Veuillez réessayer.⚠️');
+            }
+        });
+    </script>
+</body>
+
+</html>
